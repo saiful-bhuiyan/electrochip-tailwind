@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="public/style.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <style>
+        /* Custom CSS */
+
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        .barlow{
+            font-family: 'Barlow Condensed', sans-serif;
+        }
+        .poppins{
+            font-family: 'Poppins', sans-serif;
+        }
+        .shadow-all{
+            box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+        }
+        /* End Custom Css */
+    </style>
+</head>
+<body>
+    <header class="container mx-auto bg-purple-100 header_section min-h-[600px]">
+        <nav class="flex justify-between items-center w-[92%] p-4 mt-8">
+            <div class="px-4 logo">
+                <p class="text-2xl tracking-wider text-purple-700 barlow"><i class="px-4 fa-solid fa-person-walking"></i>Electrochip</i></p>
+            </div>
+
+            <div class="nav-links md:static absolute min-h-[60vh] md:min-h-fit top-[-100%] w-full md:w-auto items-center">
+                <ul class="flex flex-col gap-1 nav-ul md:gap-4 md:flex-row md:items-center poppins">
+                    <li class="px-4 py-2 hover:text-white hover:bg-purple-700 rounded-3xl">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="px-4 py-2 hover:text-white hover:bg-purple-700 rounded-3xl">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="px-4 py-2 hover:text-white hover:bg-purple-700 rounded-3xl">
+                        <a href="#">Service</a>
+                    </li>
+                    <li class="px-4 py-2 hover:text-white hover:bg-purple-700 rounded-3xl">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="px-4 py-2 hover:text-white hover:bg-purple-700 rounded-3xl">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ion-icon name="menu" onclick="ToggleMenu(this)" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+
+        <div class="grid grid-cols-2 ">
+            <div class="col-span-2 md:col-span-1 pt-[5%] px-[5%] md:px-[10%]">
+                <div class="">
+                    <h1 class="text-4xl text-center uppercase md:text-5xl md:text-start poppins">Electrical <br> Service <br> Providers</h1>
+                </div>
+                <div class="py-4">
+                    <p class="text-xl text-center md:text-start">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+                </div>
+                <div class="w-40 py-4 mx-auto md:mx-0">
+                    <button class="px-8 py-2 font-medium text-white bg-purple-800 rounded-3xl">Contact Us</button>
+                </div>
+            </div>
+            <div class="col-span-2 py-4 mx-auto md:col-span-1">
+                <div class="align-right">
+                    <img src="img/img-1.jpg" class="w-[400px] h-[400px] rounded-full border-[6px] border-purple-600" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Service Section -->
+
+    <section>
+        <div class="w-full">
+            <div class="mx-auto my-8 ">
+                <h1 class="text-4xl font-bold text-center barlow">Our Services</h1>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 px-[10%] mx-auto">
+                <div class="col-span-1 p-4 text-center shadow-all rounded-xl">
+                    <img src="img/settings.png" alt="" class="w-[80px] h-[80px] mx-auto mb-8 mt-[80px]">
+                    <h1 class="py-4 text-xl font-bold poppins">Equipment installation</h1>
+                    <p class="text-lg poppins">Equipment installation involves the process of setting up and configuring various types of machinery, devices, or systems in a specific location or environment. </p>
+                </div>
+                <div class="col-span-1 p-4 text-center shadow-all rounded-xl">
+                    <img src="img/windmill.png" alt="" class="w-[80px] h-[80px] mx-auto mb-8 mt-[80px]">
+                    <h1 class="py-4 text-xl font-bold poppins">Windmill Energy</h1>
+                    <p class="text-lg poppins">Windmill energy, also known as wind energy or wind power, is a sustainable and renewable source of electricity generated by harnessing the kinetic energy of the wind.</p>
+                </div>
+                <div class="col-span-1 p-4 text-center shadow-all rounded-xl">
+                    <img src="img/maintenance.png" alt="" class="w-[80px] h-[80px] mx-auto mb-8 mt-[80px]">
+                    <h1 class="py-4 text-xl font-bold poppins">Equipment Maintenance</h1>
+                    <p class="text-lg poppins">Equipment maintenance refers to the process of preserving, servicing, and ensuring the proper functioning of various machinery, tools, or devices.</p>
+                </div>
+                <div class="col-span-1 p-4 text-center shadow-all rounded-xl">
+                    <img src="img/offshore-platform.png" alt="" class="w-[80px] h-[80px] mx-auto mb-8 mt-[80px]">
+                    <h1 class="py-4 text-xl font-bold poppins">Offshore Engineering</h1>
+                    <p class="text-lg poppins">Offshore engineering is a multidisciplinary field that focuses on the design, construction, and maintenance of structures and systems in the marine environment, typically in oceans and seas.</p>
+                </div>
+                <div class="col-span-1 p-4 text-center shadow-all rounded-xl">
+                    <img src="img/electrical-wiring.png" alt="" class="w-[80px] h-[80px] mx-auto mb-8 mt-[80px]">
+                    <h1 class="py-4 text-xl font-bold poppins">Electrical Wiring</h1>
+                    <p class="text-lg font-normal poppins">Electrical wiring is the system of conductors, cables, and associated components used to transmit electrical power from a source to various devices, equipment, and appliances.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="h-48">
+        .
+    </div>
+    
+    <script>
+        
+        const navLinks = document.querySelector('.nav-links');
+        const navUl = document.querySelector('.nav-ul');
+        // var navLinks = document.getElementById("nav-links");
+        function ToggleMenu(e)
+        {
+            // 
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+            navLinks.classList.toggle('top-[15%]');
+            navUl.classList.toggle('bg-white');
+        }
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
