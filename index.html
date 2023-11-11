@@ -35,19 +35,19 @@
 
             <div class="nav-links md:static absolute min-h-[60vh] md:min-h-fit top-[-100%] w-full md:w-auto items-center">
                 <ul class="flex flex-col gap-1 nav-ul md:gap-4 md:flex-row md:items-center poppins">
-                    <li class="px-4 py-2 hover:text-white hover:bg-purple-700 rounded-3xl">
+                    <li class="px-4 py-2 text-white bg-purple-900 rounded-3xl">
                         <a href="#">Home</a>
                     </li>
-                    <li class="px-4 py-2 hover:text-white hover:bg-purple-700 rounded-3xl">
+                    <li class="px-4 py-2 hover:text-white hover:bg-purple-900 rounded-3xl">
                         <a href="#">About</a>
                     </li>
-                    <li class="px-4 py-2 hover:text-white hover:bg-purple-700 rounded-3xl">
+                    <li class="px-4 py-2 hover:text-white hover:bg-purple-900 rounded-3xl">
                         <a href="#">Service</a>
                     </li>
-                    <li class="px-4 py-2 hover:text-white hover:bg-purple-700 rounded-3xl">
+                    <li class="px-4 py-2 hover:text-white hover:bg-purple-900 rounded-3xl">
                         <a href="#">Blog</a>
                     </li>
-                    <li class="px-4 py-2 hover:text-white hover:bg-purple-700 rounded-3xl">
+                    <li class="px-4 py-2 hover:text-white hover:bg-purple-900 rounded-3xl poppins">
                         <a href="#">Contact</a>
                     </li>
                 </ul>
@@ -60,13 +60,13 @@
         <div class="grid grid-cols-2 ">
             <div class="col-span-2 md:col-span-1 pt-[5%] px-[5%] md:px-[10%]">
                 <div class="">
-                    <h1 class="text-4xl text-center uppercase md:text-5xl md:text-start poppins">Electrical <br> Service <br> Providers</h1>
+                    <h1 class="text-4xl text-center uppercase md:text-5xl md:text-start font-bold poppins">Electrical <br> Service <br> Providers</h1>
                 </div>
                 <div class="py-4">
                     <p class="text-xl text-center md:text-start">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
                 </div>
                 <div class="w-40 py-4 mx-auto md:mx-0">
-                    <button class="px-8 py-2 font-medium text-white bg-purple-800 rounded-3xl">Contact Us</button>
+                    <a href="#" class="px-8 py-3 font-medium text-white bg-purple-900 rounded-3xl hover:bg-purple-700">Contact Us</a>
                 </div>
             </div>
             <div class="col-span-2 py-4 mx-auto md:col-span-1">
@@ -78,45 +78,122 @@
         </div>
     </header>
 
-    <!-- Service Section -->
+    <!-- Service Section Start -->
 
     <section>
         <div class="w-full">
             <div class="mx-auto my-8 ">
-                <h1 class="text-4xl font-bold text-center barlow">Our Services</h1>
+                <h1 class="text-4xl font-bold text-center barlow "><span class="border-b-4 border-indigo-900 pb-4">Our Services</span></h1>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 px-[10%] mx-auto">
-                <div class="col-span-1 p-4 text-center shadow-all rounded-xl">
-                    <img src="img/settings.png" alt="" class="w-[80px] h-[80px] mx-auto mb-8 mt-[80px]">
-                    <h1 class="py-4 text-xl font-bold poppins">Equipment installation</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-[10%] mx-auto pt-8">
+                <div class="cursor-pointer relative col-span-1 p-4 text-center shadow-all rounded-xl border-t-[15px] border-white hover:border-indigo-700 hover:translate-y-[-15px] transition-all duration-300 ease-in">
+                    <img src="img/settings.png" alt="" class="w-[80px] h-[80px] mx-auto mb-8 mt-[60px]">
+                    <h1 class="py-4 text-[#2e0e5f] text-xl font-bold poppins">Equipment installation</h1>
                     <p class="text-lg poppins">Equipment installation involves the process of setting up and configuring various types of machinery, devices, or systems in a specific location or environment. </p>
                 </div>
-                <div class="col-span-1 p-4 text-center shadow-all rounded-xl">
-                    <img src="img/windmill.png" alt="" class="w-[80px] h-[80px] mx-auto mb-8 mt-[80px]">
-                    <h1 class="py-4 text-xl font-bold poppins">Windmill Energy</h1>
+                <div class="cursor-pointer relative col-span-1 p-4 text-center shadow-all rounded-xl border-t-[15px] border-white hover:border-indigo-700 hover:translate-y-[-15px] transition-all duration-300 ease-in">
+                    <img src="img/windmill.png" alt="" class="w-[80px] h-[80px] mx-auto mb-8 mt-[60px]">
+                    <h1 class="py-4 text-[#2e0e5f] text-xl font-bold poppins">Windmill Energy</h1>
                     <p class="text-lg poppins">Windmill energy, also known as wind energy or wind power, is a sustainable and renewable source of electricity generated by harnessing the kinetic energy of the wind.</p>
                 </div>
-                <div class="col-span-1 p-4 text-center shadow-all rounded-xl">
-                    <img src="img/maintenance.png" alt="" class="w-[80px] h-[80px] mx-auto mb-8 mt-[80px]">
-                    <h1 class="py-4 text-xl font-bold poppins">Equipment Maintenance</h1>
+                <div class="cursor-pointer relative col-span-1 p-4 text-center shadow-all rounded-xl border-t-[15px] border-white hover:border-indigo-700 hover:translate-y-[-15px] transition-all duration-300 ease-in">
+                    <img src="img/maintenance.png" alt="" class="w-[80px] h-[80px] mx-auto mb-8 mt-[60px]">
+                    <h1 class="py-4 text-[#2e0e5f] text-xl font-bold poppins">Equipment Maintenance</h1>
                     <p class="text-lg poppins">Equipment maintenance refers to the process of preserving, servicing, and ensuring the proper functioning of various machinery, tools, or devices.</p>
                 </div>
-                <div class="col-span-1 p-4 text-center shadow-all rounded-xl">
-                    <img src="img/offshore-platform.png" alt="" class="w-[80px] h-[80px] mx-auto mb-8 mt-[80px]">
-                    <h1 class="py-4 text-xl font-bold poppins">Offshore Engineering</h1>
+                <div class="cursor-pointer relative col-span-1 p-4 text-center shadow-all rounded-xl border-t-[15px] border-white hover:border-indigo-700 hover:translate-y-[-15px] transition-all duration-300 ease-in">
+                    <img src="img/offshore-platform.png" alt="" class="w-[80px] h-[80px] mx-auto mb-8 mt-[60px]">
+                    <h1 class="py-4 text-[#2e0e5f] text-xl font-bold poppins">Offshore Engineering</h1>
                     <p class="text-lg poppins">Offshore engineering is a multidisciplinary field that focuses on the design, construction, and maintenance of structures and systems in the marine environment, typically in oceans and seas.</p>
                 </div>
-                <div class="col-span-1 p-4 text-center shadow-all rounded-xl">
-                    <img src="img/electrical-wiring.png" alt="" class="w-[80px] h-[80px] mx-auto mb-8 mt-[80px]">
-                    <h1 class="py-4 text-xl font-bold poppins">Electrical Wiring</h1>
+                <div class="cursor-pointer relative col-span-1 p-4 text-center shadow-all rounded-xl border-t-[15px] border-white hover:border-indigo-700 hover:translate-y-[-15px] transition-all duration-300 ease-in">
+                    <img src="img/electrical-wiring.png" alt="" class="w-[80px] h-[80px] mx-auto mb-8 mt-[60px]">
+                    <h1 class="py-4 text-[#2e0e5f] text-xl font-bold poppins">Electrical Wiring</h1>
                     <p class="text-lg font-normal poppins">Electrical wiring is the system of conductors, cables, and associated components used to transmit electrical power from a source to various devices, equipment, and appliances.</p>
+                </div>
+            </div>
+       
+            <div class="w-40 py-4 mx-auto my-16">
+                <a href="#" class="px-8 py-3 font-medium text-white bg-purple-900 rounded-3xl hover:bg-purple-700 poppins">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section End -->
+
+    <!-- About Section -->
+
+    <section>
+        <div class="w-full ">
+            <div class="grid grid-cols-1 md:grid-cols-2 bg-[#f3f0f6] px-8 md:px-[10%] py-16">
+                <div class="my-auto col-span-2 md:col-span-1">
+                    <div class="">
+                        <h1 class="text-4xl font-bold poppins">About Us</h1>
+                    </div>
+                    <div class="my-8 w-4/5">
+                        <p class="text-lg font-normal poppins">The pain itself is very important, and it will be followed by the patient, but it will happen over
+                            time that there is a lot of work and pain. In fact, I will come to the minimum, who does not exercise any of
+                             the laborers in order to get some benefit from it. Duis, or else he will blame the pain for the pleasure
+                              he wants</p>
+                    </div>
+                    <div class="w-40 py-4 my-4">
+                        <a href="#" class="px-8 py-3 font-medium text-white bg-purple-900 rounded-lg hover:bg-purple-700 poppins">Read More</a>
+                    </div>
+                </div>
+                <div class="mx-8 md:mx-auto col-span-2 md:col-span-1 my-8 flex flex-col">
+                    <div class=" relative">
+                        <img src="img/about-1.jpeg" class="w-[70%] rounded-full border-[6px] border-purple-600" alt="">
+                    </div>
+                    <div class="">
+                        <img src="img/about-2.jpg" class="w-[50%] rounded-full border-[6px] border-purple-600 ml-auto mt-[-12%]" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="h-48">
-        .
+    <!-- About Section End -->
+
+    <!-- Blog Section Start -->
+
+    <section>
+        <div class="w-full">
+            <div class="mx-auto my-8 ">
+                <h1 class="text-4xl font-bold text-center barlow "><span class="border-b-4 border-indigo-900 pb-4">Blog</span></h1>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-[10%] py-8">
+                <div class="col-span-2 md:col-span-1 shadow-all hover:translate-y-[-15px] transition-all duration-300 ease-in">
+                    <div class="w-full">
+                        <img src="img/blog-1.jpg" class="h[300px]" alt="">
+                    </div>
+                    <div class="px-8 pt-8 pb-4">
+                        <h1 class="text-2xl font-bold poppins">High Voltage Electrical Tower</h1>
+                        <p class="text-lg poppins pt-2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised</p>
+                    </div>
+                    <div class="m-8">
+                        <a href="#" class="px-8 py-3 font-medium text-white bg-purple-900 rounded-lg hover:bg-purple-700 poppins">Read More</a>
+                    </div>
+                </div>
+                <div class="col-span-2 md:col-span-1 shadow-all hover:translate-y-[-15px] transition-all duration-300 ease-in ">
+                    <div class="w-full">
+                        <img src="img/blog-2.jpg" class="h[300px]" alt="">
+                    </div>
+                    <div class="px-8 pt-8 pb-4">
+                        <h1 class="text-2xl font-bold poppins">Light Bulb</h1>
+                        <p class="text-lg poppins pt-2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised</p>
+                    </div>
+                    <div class="m-8">
+                        <a href="#" class="px-8 py-3 font-medium text-white bg-purple-900 rounded-lg hover:bg-purple-700 poppins">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="h-8 w-full m-auto bg-gray-800">
+        <div class="text-center">
+            <h1 class="text-lg text-white barlow">© 2023 All Rights Reserved. By Saiful Islam</h1>
+        </div>
     </div>
     
     <script>
