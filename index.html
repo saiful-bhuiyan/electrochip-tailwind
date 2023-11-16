@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="public/style.css">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <style>
         /* Custom CSS */
 
@@ -22,6 +23,11 @@
         }
         .shadow-all{
             box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+        }
+        .full-shadow{
+            /* border: .5px solid #ccc;  */
+            border-radius: 5px; 
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
         }
         /* End Custom Css */
     </style>
@@ -85,7 +91,7 @@
             <div class="mx-auto my-8 ">
                 <h1 class="text-4xl font-bold text-center barlow "><span class="border-b-4 border-indigo-900 pb-4">Our Services</span></h1>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-[10%] mx-auto pt-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 px-[10%] mx-auto pt-8">
                 <div class="cursor-pointer relative col-span-1 p-4 text-center shadow-all rounded-xl border-t-[15px] border-white hover:border-indigo-700 hover:translate-y-[-15px] transition-all duration-300 ease-in">
                     <img src="img/settings.png" alt="" class="w-[80px] h-[80px] mx-auto mb-8 mt-[60px]">
                     <h1 class="py-4 text-[#2e0e5f] text-xl font-bold poppins">Equipment installation</h1>
@@ -190,9 +196,76 @@
         </div>
     </section>
 
-    <div class="h-8 w-full m-auto bg-gray-800">
+    <!-- Contact Section Start -->
+
+    <section>
+        <div class="w-full my-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 mx-auto p-[10%]">
+                <div class="col-span-2 md:col-span-1">
+                    <div class="mx-auto">
+                        <h1 class="text-3xl font-bold poppins">Contact Us</h1>
+                    </div>
+                    <div class="mx-auto mt-8 mb-2">
+                        <input id="from_name" type="text" class="p-3 poppins full-shadow w-full md:w-2/3" placeholder="Name"/>
+                    </div>
+                    <div class="mx-auto my-4">
+                        <input id="email_id" type="email" class="p-3 poppins full-shadow w-full md:w-2/3" placeholder="Email"/>
+                    </div>
+                    <div class="mx-auto my-4">
+                        <input id="phone" type="text" class="p-3 poppins full-shadow w-full md:w-2/3" placeholder="Phone Number"/>
+                    </div>
+                    <div class="mx-auto my-4">
+                        <textarea id="message" id="message" class="p-3 poppins full-shadow w-full md:w-2/3" placeholder="message (max 300 character)" cols="40" rows="5" maxlength="300"></textarea>
+                    </div>
+                    <div class="my-8">
+                        <button onclick="SendMail()" class="px-8 py-3 font-medium text-white bg-purple-900 rounded-sm hover:bg-purple-700 poppins">SEND</button>
+                    </div>
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0590473358493!2d91.40023647514049!3d23.021604079174487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3753684afc440b5b%3A0x2ee267d49828ebb5!2sCompact%20Polytechnic%20Institute%20(CPI)%2C%20Feni.!5e0!3m2!1sen!2sbd!4v1700149418420!5m2!1sen!2sbd"
+                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+
+    <section>
+        <div class="w-full bg-[#190734] h-auto py-8">
+            <div class="flex flex-col md:flex-row pt-8">
+                <div class="mx-auto py-2">
+                    <p class="text-white text-xl barlow"><i class="fa fa-location-dot text-white text-2xl px-2"></i>Compact Polytechnic institiute, Zia Academy,Feni</p>
+                </div>
+                <div class="mx-auto flex py-2">
+                    <p class="text-white text-xl barlow"><i class="fa fa-phone text-white text-2xl px-2"></i>+8801888888</p>
+                </div>
+                <div class="mx-auto flex py-2">
+                    <p class="text-white text-xl barlow"><i class="fa fa-envelope text-white text-2xl px-4"></i>demo@email.com</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 px-[10%] py-4">
+                <div class="col-span-1 md:col-span-2 flex">
+                    <input type="text" class="text-lg poppins w-full md:w-2/3 p-3 rounded-sm" placeholder="Enter your email"/>
+                    <button class="p-3 w-1/3 font-medium text-white bg-purple-900 rounded-sm hover:bg-purple-700 poppins">Subscribe</button>
+                </div>
+                <div class="col-span-1 text-white text-4xl mx-auto my-2">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section End -->
+
+    <div class="h-8 w-full m-auto bg-gray-200">
         <div class="text-center">
-            <h1 class="text-lg text-white barlow">© 2023 All Rights Reserved. By Saiful Islam</h1>
+            <h1 class="text-lg barlow">© 2023 All Rights Reserved. By Saiful Islam</h1>
         </div>
     </div>
     
@@ -200,7 +273,6 @@
         
         const navLinks = document.querySelector('.nav-links');
         const navUl = document.querySelector('.nav-ul');
-        // var navLinks = document.getElementById("nav-links");
         function ToggleMenu(e)
         {
             // 
@@ -208,6 +280,25 @@
             navLinks.classList.toggle('top-[15%]');
             navUl.classList.toggle('bg-white');
         }
+    </script>
+    
+    <script type="text/javascript">
+
+    (function(){emailjs.init("qsEUeLv-6Q9DCjdwK")})();
+
+    function SendMail()
+    {
+        var param = {
+            from_name : document.querySelector("#from_name").value,
+            email_id : document.querySelector("#email_id").value,
+            phone : document.querySelector("#phone").value,
+            message : document.querySelector("#message").value,
+        }
+        emailjs.send("service_stbflik","template_6yb88qh",param).then(function(res){
+            alert("successful")
+        })
+    }
+    
     </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
